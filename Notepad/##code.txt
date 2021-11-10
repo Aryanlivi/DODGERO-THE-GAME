@@ -1,0 +1,23 @@
+ ##############3###"FIREBALL2 Movement"
+      #  if fireball2_starty > display_height:
+        #    fireball2_starty = 0 - fireball2_height
+         #   fireball2_startx = random.randrange(0, display_width)
+      #  pygame.display.update()
+        ############################"CRASH TYPE 1"##################################################
+        #if y < fireball_starty + fireball_height:
+         #   print('y crossover')
+
+          #  if (x > fireball_startx and x < fireball_startx + fireball_width or x + fireball_width > fireball_startx
+        #  and x + fireball_width < fireball_startx + fireball_width):
+           #     print('x crossover')
+            #    crash()
+
+        ##################################################"CRASH TYPE 2"###############################################
+        #if y < fireball2_starty + fireball2_height:
+          #  print('y crossover1')
+        #pygame.display.update()
+        #if (x > fireball2_startx and x < fireball2_startx + fireball2_width or x + fireball2_width > fireball2_startx
+         #       and x+ fireball2_width < fireball2_startx + fireball2_width):
+         #   print('x crossover1')
+         #   crash()
+        ############################## "FOR GO IN THE BEGGINING"

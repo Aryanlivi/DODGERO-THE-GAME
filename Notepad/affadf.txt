@@ -1,0 +1,26 @@
+def collision(ax, ay, aw, ah, bx, by, bw, bh):
+    return ax < bx+bw and ay < by+bh and bx < ax+aw and by < ay+ah
+
+
+if collision(x, y, Aero_width, Aero_height, fireball_startx, fireball_starty, fireball_width,
+                     fireball_height):
+            crash()
+
+
+class crash():
+    #########for msg display :(both text_objects nd message display FUNC):
+    def text_objects(self,text,font):
+        self.Textsurf=font.render(text,True,(0,0,0))
+        return self.Textsurf,self.Textsurf.get_rect()
+    def message_display(self,text):
+        self.The_text=pygame.font.Font("freesansbold.ttf",40)
+        self.Textsurf , self.Textbox=text_objects(text,self.The_text)
+        self.Textbox.center=((display_width/2),(display_height/2))
+
+        gameDisplay.blit(self.Textsurf,self.Textbox)
+        pygame.display.update()
+        time.sleep(2)
+        gameloop()
+    ### crash:
+    def crashed():
+        self.message_display("You Crashed!!")
